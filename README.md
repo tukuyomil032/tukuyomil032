@@ -1,9 +1,19 @@
 ## Hi, I'm here👋
 ---
 
-I'm tukuyomi032 living in Japan.
+I'm tukuyomi032, living in Japan.
 
 My hobby is watching a anime, and listen to music.
+
+Also, I love Minecraft too!
+
+I especially love developing redstone circuits! It's one of the reasons I grew to love programming.
+
+My Favorite music artists are:
+
+- **[YOASOBI](https://www.yoasobi-music.jp/)**
+- **[あいみょん](https://www.aimyong.net/)**
+- **[Justin Bieber](https://www.justinbiebermusic.com/)**
 
 what I particularly like anime is :
 - **[推しの子(Oshi no Ko)](https://ichigoproduction.com/)**
