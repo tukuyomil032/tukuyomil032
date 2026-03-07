@@ -3,7 +3,8 @@
 
 I'm tukuyomi032 living in Japan.
 
-My hobby is watching a anime, and listen to music.what I particularly like anime is :
+My hobby is watching a anime, and listen to music.
+what I particularly like anime is :
 - **[推しの子(Oshi no Ko)](https://ichigoproduction.com/)**
 - **[葬送のフリーレン (Frieren: Beyond Journey's end)](https://frieren-anime.jp/)**
 - **[無職転生 〜異世界行ったら本気だす〜(Mushoku Tensei: Jobless Reincarnation)](https://mushokutensei.jp/)**
