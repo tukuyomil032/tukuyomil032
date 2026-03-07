@@ -13,7 +13,7 @@ My hobby is watching a anime, and listen to music.what I particularly like anime
     <img src="assets/logo/frieren.gif" alt="Frieren" width="290" />
   </a>
   <a href="https://mushokutensei.jp/">
-    <img src="assets/logo/mushokutensei.gif" alt="Frieren" width="290" />
+    <img src="assets/logo/mushokutensei.gif" alt="Mushokutensei" width="290" />
   </a>
 </p>
 
