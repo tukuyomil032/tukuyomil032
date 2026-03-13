@@ -19,7 +19,7 @@ what I particularly like anime is :
 - **[推しの子(Oshi no Ko)](https://ichigoproduction.com/)**
 - **[葬送のフリーレン (Frieren: Beyond Journey's end)](https://frieren-anime.jp/)**
 - **[無職転生 〜異世界行ったら本気だす〜(Mushoku Tensei: Jobless Reincarnation)](https://mushokutensei.jp/)**
-
+- **[Re:ゼロから始める異世界生活(Re:ZERO -Starting Life in Another World)](https://re-zero-anime.jp/tv/)**
 <p align="center">
   <a href="https://frieren-anime.jp/">
     <img src="assets/logo/frieren.gif" alt="Frieren" width="290" />
