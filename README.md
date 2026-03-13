@@ -14,6 +14,7 @@ My Favorite music artists are:
 - **[YOASOBI](https://www.yoasobi-music.jp/)**
 - **[あいみょん](https://www.aimyong.net/)**
 - **[Justin Bieber](https://www.justinbiebermusic.com/)**
+- **[Ed Sheeran](https://www.edsheeran.com/)**
 
 what I particularly like anime is :
 - **[推しの子(Oshi no Ko)](https://ichigoproduction.com/)**
