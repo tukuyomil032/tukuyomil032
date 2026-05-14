@@ -4,11 +4,11 @@
 
   <br><br>
 
-  <img src="assets/profile/stats.svg" height="180" />
-  <img src="assets/profile/top-langs.svg" height="180" />
+  <img src="https://github-readme-streak-stats-seven-orpin.vercel.app?user=tukuyomil032&theme=github-dark-blue&hide_border=true" height="195" />
 
   <br><br>
 
-  <img src="https://streak-stats.demolab.com?user=tukuyomil032&theme=github-dark-blue&hide_border=true" height="180" />
+  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=github_dark_blue&count_private=true&include_all_commits=true" height="195" />
+  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=default&langs_count=6&card_width=495&theme=github_dark_blue" height="195" />
 
 </div>
