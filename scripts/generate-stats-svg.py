@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Fetches GitHub stats card SVGs and combines them into a single
-self-contained responsive SVG with CSS media queries.
-Mobile (<601px): stacked vertically, each card at 100% width.
-Desktop (>=601px): side by side, each card at 50% width.
+Fetches GitHub stats card SVGs and embeds them as INLINE SVG in README.md.
+
+Inline SVG (not via <img>) allows @media queries to respond to the browser's
+actual document viewport width — enabling true responsive layout:
+  Mobile  (<600px viewport): cards stacked vertically at 100% width
+  Desktop (>=600px viewport): cards side by side at 50% width each
 """
 import os
 import re
@@ -26,7 +28,9 @@ LANGS_URL = (
     "&theme=prussian"
     "&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin"
 )
-OUTPUT = "assets/profile/stats-layout.svg"
+README = "README.md"
+MARKER_START = "<!-- STATS-START -->"
+MARKER_END = "<!-- STATS-END -->"
 
 
 def fetch_svg(url):
@@ -60,39 +64,53 @@ def main():
     gap = 10
     card_h = max(stats["height"], langs["height"])
     langs_y = stats["height"] + gap
-    # SVG height must exceed the widest phone (430px) so portrait orientation
-    # triggers on mobile while landscape triggers on desktop (>445px wide).
-    svg_h = max(stats["height"] + gap + langs["height"], 445)
+    mobile_h = stats["height"] + gap + langs["height"]
 
-    svg = f"""\
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{svg_h}">
+    inline_svg = f"""\
+{MARKER_START}
+<svg id="stats-layout" xmlns="http://www.w3.org/2000/svg" width="100%">
   <style>
-    /* Desktop: SVG width > height (landscape) → side by side */
-    @media (orientation: landscape) {{
-      :root {{ height: {card_h}px; }}
-      svg#{stats['id']} {{ width: 50%; }}
-      svg#{langs['id']} {{ x: 50%; y: 0; width: 50%; }}
+    /* Mobile default: stacked */
+    #stats-layout {{ height: {mobile_h}px; }}
+    svg#stats-card {{ x: 0; y: 0; width: 100%; height: {stats['height']}px; }}
+    svg#langs-card {{ x: 0; y: {langs_y}px; width: 100%; height: {langs['height']}px; }}
+    /* Desktop (>=600px): side by side */
+    @media (min-width: 600px) {{
+      #stats-layout {{ height: {card_h}px; }}
+      svg#stats-card {{ width: 50%; }}
+      svg#langs-card {{ x: 50%; y: 0; width: 50%; }}
     }}
   </style>
-
-  <svg id="{stats['id']}"
+  <svg id="stats-card"
        x="0" y="0" width="100%" height="{stats['height']}"
        viewBox="{stats['viewbox']}" xmlns="http://www.w3.org/2000/svg">
     {stats['inner']}
   </svg>
-
-  <svg id="{langs['id']}"
+  <svg id="langs-card"
        x="0" y="{langs_y}" width="100%" height="{langs['height']}"
        viewBox="{langs['viewbox']}" xmlns="http://www.w3.org/2000/svg">
     {langs['inner']}
   </svg>
 </svg>
-"""
+{MARKER_END}"""
 
-    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        f.write(svg)
-    print(f"Written: {OUTPUT}")
+    with open(README, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    pattern = re.compile(
+        re.escape(MARKER_START) + r".*?" + re.escape(MARKER_END),
+        re.DOTALL,
+    )
+    if MARKER_START not in content:
+        print(f"ERROR: markers not found in {README}")
+        return
+
+    new_content = pattern.sub(inline_svg, content)
+
+    with open(README, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+    print(f"Updated {README}")
 
 
 if __name__ == "__main__":
