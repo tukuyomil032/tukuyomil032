@@ -8,7 +8,7 @@
 
   <br><br>
 
-  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=github_dark_blue&count_private=true&include_all_commits=true" height="195" />
-  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=default&langs_count=6&card_width=495&theme=github_dark_blue" height="195" />
+  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=prussian&count_private=true&include_all_commits=true" height="195" />
+  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=default&langs_count=6&card_width=495&theme=prussian" height="195" />
 
 </div>
