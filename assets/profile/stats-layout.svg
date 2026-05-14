@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="395">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="445">
   <style>
-    /* Desktop (>=450px): side by side */
-    @media (min-width: 450px) {
+    /* Desktop: SVG width > height (landscape) → side by side */
+    @media (orientation: landscape) {
       :root { height: 195px; }
       svg#stats-card { width: 50%; }
       svg#langs-card { x: 50%; y: 0; width: 50%; }

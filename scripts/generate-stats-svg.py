@@ -58,16 +58,18 @@ def main():
     print(f"  viewBox={langs['viewbox']} height={langs['height']}")
 
     gap = 10
-    mobile_h = stats["height"] + gap + langs["height"]
-    desktop_h = max(stats["height"], langs["height"])
+    card_h = max(stats["height"], langs["height"])
     langs_y = stats["height"] + gap
+    # SVG height must exceed the widest phone (430px) so portrait orientation
+    # triggers on mobile while landscape triggers on desktop (>445px wide).
+    svg_h = max(stats["height"] + gap + langs["height"], 445)
 
     svg = f"""\
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{mobile_h}">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{svg_h}">
   <style>
-    /* Desktop (>=450px): side by side */
-    @media (min-width: 450px) {{
-      :root {{ height: {desktop_h}px; }}
+    /* Desktop: SVG width > height (landscape) → side by side */
+    @media (orientation: landscape) {{
+      :root {{ height: {card_h}px; }}
       svg#{stats['id']} {{ width: 50%; }}
       svg#{langs['id']} {{ x: 50%; y: 0; width: 50%; }}
     }}
