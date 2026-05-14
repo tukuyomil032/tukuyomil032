@@ -2,7 +2,7 @@ name: Update Stats SVG
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 毎日 00:00 UTC
+    - cron: '0 */3 * * *'  # 3時間おき
   workflow_dispatch:
 
 jobs:

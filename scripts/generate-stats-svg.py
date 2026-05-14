@@ -63,13 +63,8 @@ def main():
     langs_y = stats["height"] + gap
 
     svg = f"""\
-<svg xmlns="http://www.w3.org/2000/svg" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{mobile_h}">
   <style>
-    /* Mobile default: stacked */
-    :root {{ height: {mobile_h}px; }}
-    svg#{stats['id']} {{ x: 0; y: 0;       width: 100%; height: {stats['height']}px; }}
-    svg#{langs['id']} {{ x: 0; y: {langs_y}px; width: 100%; height: {langs['height']}px; }}
-
     /* Desktop (>=601px): side by side */
     @media (min-width: 601px) {{
       :root {{ height: {desktop_h}px; }}
@@ -78,11 +73,15 @@ def main():
     }}
   </style>
 
-  <svg id="{stats['id']}" viewBox="{stats['viewbox']}" xmlns="http://www.w3.org/2000/svg">
+  <svg id="{stats['id']}"
+       x="0" y="0" width="100%" height="{stats['height']}"
+       viewBox="{stats['viewbox']}" xmlns="http://www.w3.org/2000/svg">
     {stats['inner']}
   </svg>
 
-  <svg id="{langs['id']}" viewBox="{langs['viewbox']}" xmlns="http://www.w3.org/2000/svg">
+  <svg id="{langs['id']}"
+       x="0" y="{langs_y}" width="100%" height="{langs['height']}"
+       viewBox="{langs['viewbox']}" xmlns="http://www.w3.org/2000/svg">
     {langs['inner']}
   </svg>
 </svg>
