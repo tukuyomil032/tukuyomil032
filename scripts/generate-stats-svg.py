@@ -65,8 +65,8 @@ def main():
     svg = f"""\
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{mobile_h}">
   <style>
-    /* Desktop (>=601px): side by side */
-    @media (min-width: 601px) {{
+    /* Desktop (>=450px): side by side */
+    @media (min-width: 450px) {{
       :root {{ height: {desktop_h}px; }}
       svg#{stats['id']} {{ width: 50%; }}
       svg#{langs['id']} {{ x: 50%; y: 0; width: 50%; }}
