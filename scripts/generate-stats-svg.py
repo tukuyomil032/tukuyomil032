@@ -57,7 +57,7 @@ def main():
     langs = parse_svg(fetch_svg(LANGS_URL), "langs-card")
     print(f"  viewBox={langs['viewbox']} height={langs['height']}")
 
-    gap = 20
+    gap = 10
     mobile_h = stats["height"] + gap + langs["height"]
     desktop_h = max(stats["height"], langs["height"])
     langs_y = stats["height"] + gap
