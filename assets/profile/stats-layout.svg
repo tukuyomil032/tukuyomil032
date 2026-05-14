@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%">
+  <style>
+    /* モバイルデフォルト: 縦並び・中央揃え */
+    :root { height: 370px; }
+    image#stats { x: 0; y: 0;    width: 100%; height: 175px; }
+    image#langs { x: 0; y: 195px; width: 100%; height: 175px; }
+
+    /* PC (601px以上): 横並び */
+    @media (min-width: 601px) {
+      :root { height: 175px; }
+      image#stats { width: 50%; }
+      image#langs { x: 50%; y: 0; width: 50%; }
+    }
+  </style>
+
+  <image id="stats"
+    href="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=prussian&count_private=true&include_all_commits=true"/>
+  <image id="langs"
+    href="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=compact&langs_count=8&card_width=460&theme=prussian&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin"/>
+</svg>
