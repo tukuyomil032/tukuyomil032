@@ -14,6 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Generate combined stats SVG
         run: python scripts/generate-stats-svg.py
 
@@ -22,5 +26,9 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/profile/stats-layout.svg
-          git diff --staged --quiet || git commit -m "chore: update stats layout svg"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update stats layout svg"
+            git push
+          fi

@@ -5,8 +5,8 @@ self-contained responsive SVG with CSS media queries.
 Mobile (<601px): stacked vertically, each card at 100% width.
 Desktop (>=601px): side by side, each card at 50% width.
 """
+import os
 import re
-import sys
 import urllib.request
 
 STATS_URL = (
@@ -87,6 +87,7 @@ def main():
 </svg>
 """
 
+    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"Written: {OUTPUT}")
