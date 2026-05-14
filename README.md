@@ -10,5 +10,5 @@
 
 <p>
   <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=prussian&count_private=true&include_all_commits=true" width="49.6%" />
-  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=compact&langs_count=8&card_width=440&theme=prussian&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin" width="49.6%" />
+  <img src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=compact&langs_count=8&card_width=482&theme=prussian&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin" width="49.6%" />
 </p>
