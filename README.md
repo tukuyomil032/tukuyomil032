@@ -12,5 +12,5 @@
   <img align="left" height="195" src="https://github-readme-stats-eight-fawn-62.vercel.app/api?username=tukuyomil032&show_icons=true&theme=prussian&count_private=true&include_all_commits=true" />
 </a>
 <a href="https://github.com/tukuyomil032/github-readme-stats">
-  <img align="left" height="195" src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=compact&langs_count=8&card_width=500&theme=prussian&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin" />
+  <img align="left" height="195" src="https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs?username=tukuyomil032&layout=compact&langs_count=8&card_width=440&theme=prussian&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin" />
 </a>
