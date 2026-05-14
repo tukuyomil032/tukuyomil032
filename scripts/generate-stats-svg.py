@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """
-Fetches GitHub stats card SVGs and embeds them as INLINE SVG in README.md.
-
-Inline SVG (not via <img>) allows @media queries to respond to the browser's
-actual document viewport width — enabling true responsive layout:
-  Mobile  (<600px viewport): cards stacked vertically at 100% width
-  Desktop (>=600px viewport): cards side by side at 50% width each
+Fetches GitHub stats card SVGs and combines them into a single
+self-contained SVG file (assets/profile/stats-layout.svg).
+Both cards are displayed stacked vertically at full width.
 """
 import os
 import re
@@ -28,9 +25,7 @@ LANGS_URL = (
     "&theme=prussian"
     "&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin"
 )
-README = "README.md"
-MARKER_START = "<!-- STATS-START -->"
-MARKER_END = "<!-- STATS-END -->"
+OUTPUT = "assets/profile/stats-layout.svg"
 
 
 def fetch_svg(url):
@@ -62,25 +57,11 @@ def main():
     print(f"  viewBox={langs['viewbox']} height={langs['height']}")
 
     gap = 10
-    card_h = max(stats["height"], langs["height"])
     langs_y = stats["height"] + gap
-    mobile_h = stats["height"] + gap + langs["height"]
+    total_h = stats["height"] + gap + langs["height"]
 
-    inline_svg = f"""\
-{MARKER_START}
-<svg id="stats-layout" xmlns="http://www.w3.org/2000/svg" width="100%">
-  <style>
-    /* Mobile default: stacked */
-    #stats-layout {{ height: {mobile_h}px; }}
-    svg#stats-card {{ x: 0; y: 0; width: 100%; height: {stats['height']}px; }}
-    svg#langs-card {{ x: 0; y: {langs_y}px; width: 100%; height: {langs['height']}px; }}
-    /* Desktop (>=600px): side by side */
-    @media (min-width: 600px) {{
-      #stats-layout {{ height: {card_h}px; }}
-      svg#stats-card {{ width: 50%; }}
-      svg#langs-card {{ x: 50%; y: 0; width: 50%; }}
-    }}
-  </style>
+    svg = f"""\
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{total_h}">
   <svg id="stats-card"
        x="0" y="0" width="100%" height="{stats['height']}"
        viewBox="{stats['viewbox']}" xmlns="http://www.w3.org/2000/svg">
@@ -92,25 +73,12 @@ def main():
     {langs['inner']}
   </svg>
 </svg>
-{MARKER_END}"""
+"""
 
-    with open(README, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    pattern = re.compile(
-        re.escape(MARKER_START) + r".*?" + re.escape(MARKER_END),
-        re.DOTALL,
-    )
-    if MARKER_START not in content:
-        print(f"ERROR: markers not found in {README}")
-        return
-
-    new_content = pattern.sub(inline_svg, content)
-
-    with open(README, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
-    print(f"Updated {README}")
+    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
+    with open(OUTPUT, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Written: {OUTPUT}")
 
 
 if __name__ == "__main__":
