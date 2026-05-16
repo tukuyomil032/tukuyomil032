@@ -9,5 +9,5 @@
 </div>
 
 <p align="center">
-  <img src="assets/profile/stats-layout.svg" width="100%" />
+  <img src="assets/profile/stats-layout-v2.svg" width="100%" />
 </p>
