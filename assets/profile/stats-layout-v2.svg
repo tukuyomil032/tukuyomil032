@@ -1,15 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="395">
-  <style>
-    /* Desktop (>=601px): side by side */
-    @media (min-width: 601px) {
-      :root { height: 195px; }
-      svg#stats-card { width: 50%; }
-      svg#langs-card { x: 50%; y: 0; width: 50%; }
-    }
-  </style>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 200" width="100%">
   <svg id="stats-card"
-       x="0" y="0" width="100%" height="195"
+       x="0" y="0" width="467" height="195"
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: B-</title>
@@ -234,10 +225,9 @@
         </g>
       
   </svg>
-
   <svg id="langs-card"
-       x="0" y="205" width="100%" height="190"
-       viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg">
+       x="473" y="0" width="460" height="195"
+       viewBox="0 0 460 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId"></title>
         <desc id="descId"></desc>
