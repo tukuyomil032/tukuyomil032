@@ -28,6 +28,7 @@ jobs:
           git add assets/profile/stats-layout-v2.svg
           if git diff --staged --quiet; then
             echo "No changes to commit"
+            exit 0
           else
             git commit -m "chore: update stats layout svg"
             git push
