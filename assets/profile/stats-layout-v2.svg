@@ -227,7 +227,7 @@
   </svg>
   <svg id="langs-card"
        x="473" y="0" width="460" height="195"
-       viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg">
+       viewBox="0 0 460 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId"></title>
         <desc id="descId"></desc>
