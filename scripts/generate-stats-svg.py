@@ -14,7 +14,7 @@ STATS_URL = (
     "&show_icons=true"
     "&theme=prussian"
     "&count_private=true"
-    "&include_all_commits=true"
+    "&include_all_commits=false"
 )
 LANGS_URL = (
     "https://github-readme-stats-eight-fawn-62.vercel.app/api/top-langs"
