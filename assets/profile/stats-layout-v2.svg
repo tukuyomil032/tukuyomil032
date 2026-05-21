@@ -4,7 +4,7 @@
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 1081, Total PRs: 39, Total Issues: 2, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 1082, Total PRs: 39, Total Issues: 2, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -68,7 +68,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 136.5707732334827;
+        stroke-dashoffset: 136.56498270183528;
       }
     }
   
