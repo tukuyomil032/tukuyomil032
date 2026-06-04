@@ -4,7 +4,7 @@
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 15, Total Commits  (last year) : 1369, Total PRs: 56, Total Issues: 2, Contributed to (last year): 7</desc>
+        <desc id="descId">Total Stars Earned: 15, Total Commits  (last year) : 1487, Total PRs: 56, Total Issues: 2, Contributed to (last year): 7</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -68,7 +68,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 123.65568889485465;
+        stroke-dashoffset: 123.38460897685859;
       }
     }
   
@@ -172,7 +172,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >1.4k</text>
+      >1.5k</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -351,7 +351,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="310.95"
+          width="306.4"
           height="8"
           fill="#3178c6"
         />
@@ -359,9 +359,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="310.95"
+          x="306.4"
           y="0"
-          width="32.19"
+          width="31.72"
           height="8"
           fill="#dea584"
         />
@@ -369,9 +369,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="343.14"
+          x="338.12"
           y="0"
-          width="28.78"
+          width="28.36"
           height="8"
           fill="#b07219"
         />
@@ -379,19 +379,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="371.91999999999996"
+          x="366.48"
           y="0"
-          width="13.26"
-          height="8"
-          fill="#3572A5"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="385.17999999999995"
-          y="0"
-          width="17.87"
+          width="13.74"
           height="8"
           fill="#F05138"
         />
@@ -399,9 +389,19 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="393.04999999999995"
+          x="380.22"
           y="0"
-          width="17.78"
+          width="13.07"
+          height="8"
+          fill="#3572A5"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="393.29"
+          y="0"
+          width="17.66"
           height="8"
           fill="#89e051"
         />
@@ -409,9 +409,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="400.8299999999999"
+          x="400.95000000000005"
           y="0"
-          width="16.2"
+          width="16.11"
           height="8"
           fill="#e34c26"
         />
@@ -419,9 +419,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="407.0299999999999"
+          x="407.06000000000006"
           y="0"
-          width="12.97"
+          width="12.93"
           height="8"
           fill="#000080"
         />
@@ -432,56 +432,56 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3178c6" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 75.84%
+        TypeScript 74.73%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#dea584" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Rust 7.85%
+        Rust 7.74%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#b07219" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Java 7.02%
+        Java 6.92%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
+      <circle cx="5" cy="6" r="5" fill="#F05138" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 3.23%
+        Swift 3.35%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#F05138" />
+      <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Swift 1.92%
+        Python 3.19%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#89e051" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell 1.90%
+        Shell 1.87%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 1.51%
+        HTML 1.49%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms">
       <circle cx="5" cy="6" r="5" fill="#000080" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Lua 0.72%
+        Lua 0.71%
       </text>
     </g>
   </g></g>
