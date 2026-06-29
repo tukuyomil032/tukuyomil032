@@ -30,6 +30,6 @@ jobs:
             echo "No changes to commit"
             exit 0
           else
-            git commit -m "chore: update stats layout svg"
+            git commit -m "chore: update stats layout svg" -m "Co-Authored-By: tukuyomil032 <118542180+tukuyomil032@users.noreply.github.com>"
             git push
           fi
