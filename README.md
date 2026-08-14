@@ -4,7 +4,7 @@
 
   <br>
 
-  <img src="https://github-readme-streak-stats-seven-orpin.vercel.app?user=tukuyomil032&theme=github-dark-blue&hide_border=true" height="175" />
+  <img src="assets/profile/streak-stats.svg" height="175" />
 
 </div>
 
