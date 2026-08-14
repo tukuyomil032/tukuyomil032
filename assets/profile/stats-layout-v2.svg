@@ -4,7 +4,7 @@
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 27, Total Commits  (last year) : 2641, Total PRs: 118, Total Issues: 2, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 27, Total Commits  (last year) : 2644, Total PRs: 118, Total Issues: 2, Contributed to (last year): 10</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -68,7 +68,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 93.70332034517811;
+        stroke-dashoffset: 93.70309114786916;
       }
     }
   
@@ -351,7 +351,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="274.17"
+          width="274.15"
           height="8"
           fill="#3178c6"
         />
@@ -359,9 +359,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="274.17"
+          x="274.15"
           y="0"
-          width="57.08"
+          width="57.07"
           height="8"
           fill="#F05138"
         />
@@ -369,7 +369,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="331.25"
+          x="331.21999999999997"
           y="0"
           width="24.73"
           height="8"
@@ -379,9 +379,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="355.98"
+          x="355.95"
           y="0"
-          width="22.15"
+          width="22.14"
           height="8"
           fill="#b07219"
         />
@@ -389,9 +389,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="378.13"
+          x="378.09"
           y="0"
-          width="12.57"
+          width="12.61"
           height="8"
           fill="#3572A5"
         />
@@ -432,7 +432,7 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3178c6" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 66.87%
+        TypeScript 66.86%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
