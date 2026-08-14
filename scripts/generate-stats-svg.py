@@ -6,6 +6,7 @@ Both cards are displayed side by side at equal height.
 """
 import os
 import re
+import time
 import urllib.request
 
 STATS_URL = (
@@ -25,7 +26,14 @@ LANGS_URL = (
     "&theme=prussian"
     "&hide=php,scss,css,markdown,mdx,javascript,vue,kotlin"
 )
+STREAK_URL = (
+    "https://github-readme-streak-stats-seven-orpin.vercel.app/"
+    "?user=tukuyomil032"
+    "&theme=github-dark-blue"
+    "&hide_border=true"
+)
 OUTPUT = "assets/profile/stats-layout-v2.svg"
+STREAK_OUTPUT = "assets/profile/streak-stats.svg"
 GAP = 10
 
 
@@ -91,6 +99,15 @@ def main():
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"Written: {OUTPUT}")
+
+    print("Fetching streak card…")
+    # Vercel caches this endpoint for 24h (Cache-Control: max-age=86400);
+    # a cache-busting query param forces a fresh MISS on every run.
+    streak_svg = fetch_svg(f"{STREAK_URL}&_ts={int(time.time())}")
+    os.makedirs(os.path.dirname(STREAK_OUTPUT), exist_ok=True)
+    with open(STREAK_OUTPUT, "w", encoding="utf-8") as f:
+        f.write(streak_svg)
+    print(f"Written: {STREAK_OUTPUT}")
 
 
 if __name__ == "__main__":
