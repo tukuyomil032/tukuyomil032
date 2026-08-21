@@ -4,7 +4,7 @@
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 27, Total Commits  (last year) : 2699, Total PRs: 125, Total Issues: 2, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 27, Total Commits  (last year) : 2713, Total PRs: 125, Total Issues: 2, Contributed to (last year): 10</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -68,7 +68,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 92.56719645705772;
+        stroke-dashoffset: 92.56629948133522;
       }
     }
   
@@ -351,7 +351,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="276.06"
+          width="275.85"
           height="8"
           fill="#3178c6"
         />
@@ -359,9 +359,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="276.06"
+          x="275.85"
           y="0"
-          width="56.03"
+          width="56.15"
           height="8"
           fill="#F05138"
         />
@@ -369,9 +369,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="332.09000000000003"
+          x="332"
           y="0"
-          width="24.9"
+          width="24.88"
           height="8"
           fill="#dea584"
         />
@@ -379,9 +379,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="356.99"
+          x="356.88"
           y="0"
-          width="21.72"
+          width="21.7"
           height="8"
           fill="#b07219"
         />
@@ -389,9 +389,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="378.71000000000004"
+          x="378.58"
           y="0"
-          width="12.36"
+          width="12.35"
           height="8"
           fill="#3572A5"
         />
@@ -399,9 +399,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="391.07000000000005"
+          x="390.93"
           y="0"
-          width="18.67"
+          width="18.66"
           height="8"
           fill="#e34c26"
         />
@@ -409,9 +409,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="399.74000000000007"
+          x="399.59000000000003"
           y="0"
-          width="18.02"
+          width="18.17"
           height="8"
           fill="#89e051"
         />
@@ -432,14 +432,14 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3178c6" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 67.33%
+        TypeScript 67.28%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#F05138" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Swift 13.67%
+        Swift 13.69%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
@@ -453,14 +453,14 @@
     <g class="stagger" style="animation-delay: 900ms">
       <circle cx="5" cy="6" r="5" fill="#b07219" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Java 5.30%
+        Java 5.29%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 3.02%
+        Python 3.01%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
@@ -474,7 +474,7 @@
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#89e051" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell 1.96%
+        Shell 1.99%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
