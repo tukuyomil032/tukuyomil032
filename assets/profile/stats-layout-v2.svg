@@ -4,7 +4,7 @@
        viewBox="0 0 467 195" xmlns="http://www.w3.org/2000/svg">
     
         <title id="titleId">tukuyomi032's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 22, Total Commits  (last year) : 3438, Total PRs: 181, Total Issues: 5, Contributed to (last year): 13</desc>
+        <desc id="descId">Total Stars Earned: 22, Total Commits  (last year) : 3441, Total PRs: 182, Total Issues: 5, Contributed to (last year): 13</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -68,7 +68,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 88.28007679013523;
+        stroke-dashoffset: 88.20969583876749;
       }
     }
   
@@ -187,7 +187,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >181</text>
+      >182</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -351,7 +351,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="272.46"
+          width="272.5"
           height="8"
           fill="#3178c6"
         />
@@ -359,9 +359,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="272.46"
+          x="272.5"
           y="0"
-          width="54.53"
+          width="54.52"
           height="8"
           fill="#dea584"
         />
@@ -369,9 +369,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="326.99"
+          x="327.02"
           y="0"
-          width="45.42"
+          width="45.41"
           height="8"
           fill="#F05138"
         />
@@ -379,7 +379,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="372.41"
+          x="372.42999999999995"
           y="0"
           width="15.28"
           height="8"
@@ -389,7 +389,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="387.69"
+          x="387.7099999999999"
           y="0"
           width="19.41"
           height="8"
@@ -399,9 +399,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="397.1"
+          x="397.11999999999995"
           y="0"
-          width="17.18"
+          width="17.17"
           height="8"
           fill="#89e051"
         />
@@ -409,7 +409,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="404.28000000000003"
+          x="404.28999999999996"
           y="0"
           width="14.129999999999999"
           height="8"
@@ -419,7 +419,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="408.41"
+          x="408.41999999999996"
           y="0"
           width="11.58"
           height="8"
@@ -432,7 +432,7 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3178c6" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 66.45%
+        TypeScript 66.46%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
